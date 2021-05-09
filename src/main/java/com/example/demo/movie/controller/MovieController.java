@@ -13,5 +13,9 @@ import java.util.List;
 @RequestMapping("/movies")
 public class MovieController {
 
-
+    @GetMapping("")
+    public ResponseEntity<List<Movie>> getAllMovies()
+    {
+        return ResponseEntity.ok(new Movie().);
+    }
 }
