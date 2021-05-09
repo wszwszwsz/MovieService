@@ -14,8 +14,8 @@ import java.util.List;
 public class MovieController {
 
     @GetMapping("")
-    public ResponseEntity<List<Movie>> getAllMovies()
-    {
-        return ResponseEntity.ok(new Movie().);
+    public ResponseEntity<List<Movie>> getAllMovies(){
+
     }
+
 }
