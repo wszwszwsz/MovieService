@@ -1,19 +1,17 @@
 package com.example.demo.movie.model;
 
-import com.example.demo.movie.enums.CategoryEnum;
+import com.example.demo.movie.enums.Category;
+
 public class Movie {
 
     private Long Id;
     private String Name;
-    private CategoryEnum.Category category;
+    private Enum Category;
 
-    public Movie(){
-    }
-
-    public Movie(Long id, String name, CategoryEnum.Category category) {
+    public Movie(Long id, String name, Enum category) {
         Id = id;
         Name = name;
-        this.category = category;
+        Category = category;
     }
 
     public Long getId() {
@@ -32,11 +30,11 @@ public class Movie {
         Name = name;
     }
 
-    public CategoryEnum.Category getCategory() {
-        return category;
+    public Enum getCategory() {
+        return Category;
     }
 
-    public void setCategory(CategoryEnum.Category category) {
-        this.category = category;
+    public void setCategory(Enum category) {
+        Category = category;
     }
 }
