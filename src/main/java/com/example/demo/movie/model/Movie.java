@@ -1,18 +1,13 @@
 package com.example.demo.movie.model;
 
-import com.example.demo.movie.enums.Category;
-
-
 public class Movie {
 
-    private long Id;
+    private Long Id;
     private String Name;
-    private Category.Categories Category;
+    private enum categories {HORROR, ACTION};
 
-    public Movie(String name, String category) {
-        this.Id = 1;
-        this.Name = name;
-        this.Category = com.example.demo.movie.enums.Category.Categories.valueOf(category);
+    public Movie(){
+
     }
 
     public long getId() {
@@ -29,13 +24,5 @@ public class Movie {
 
     public void setName(String name) {
         Name = name;
-    }
-
-    public com.example.demo.movie.enums.Category.Categories getCategory() {
-        return Category;
-    }
-
-    public void setCategory(String category) {
-        this.Category = com.example.demo.movie.enums.Category.Categories.valueOf(category);
     }
 }
